@@ -1,0 +1,9 @@
+<p>home works!</p>
+<ng-container *ngIf="!(loading$ | async)">
+  <ul @list>
+    <li *ngFor="let movie of movies$ | async">
+      <!-- async subscribe&unsubscribe to movies$ -->
+      {{ movie.title }}
+    </li>
+  </ul>
+</ng-container>
