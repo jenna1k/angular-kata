@@ -6,7 +6,7 @@
     "movie-list": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": {
+        "@datorama/akita:component": {
           "style": "scss"
         }
       },
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "movie-list"
+    }
+  },
+  "defaultProject": "movie-list",
+  "cli": {
+    "defaultCollection": "@datorama/akita"
+  }
 }
